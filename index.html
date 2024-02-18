@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-----------Daisy Ui and Tailwind-------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---------------------------gogle font manrope----------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+     .font-raleway{
+        font-family: "Raleway", sans-serif;
+     }
+     .font-inter{
+        font-family: "Inter", sans-serif;
+     }
+    </style>
+</head>
+
+<body class="font-raleway">
+    <header class="p-16 ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Parent</a>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl font-extrabold .font-raleway">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-medium .font-raleway gap-10">
+                    <li><a>Home</a></li>
+                    <li><a> About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-[#1DD100] ">Bus <span><img src="./images/bus-icon.png" alt=""></span></a>
+            </div>
+        </div>
+           <div class="absolute">
+            <div class="hero min-h-screen"><img src="/images/banner.png" alt="">
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="mb-32">
+                    <h1 class=" text-5xl font-bold mb-5">End-to-End Travel with <br><span class="text-[#1DD100] pt-2">P Paribahan</span></h1>
+                    <p class="mb-5 w-[600px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <button class="btn  text-[#000000] bg-[#1DD100]">Buy Tickets</button>
+                  </div>
+                </div>
+            </div>
+           </div>
+        <div class="flex gap-6 justify-center relative mt-[510px] ">
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure class="pl-6"><img src="images/people.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <h1 class="card-title font-bold text-4xl .font-inter">500K+</h1>
+                  <p class="font-normal .font-inter">Registered users</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure class="pl-6"><img src="images/ticket-cupon.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold text-4xl .font-inter">1.7 lacks</h2>
+                  <p>Tickets sold</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure class="pl-6"><img src="images/stoppage.png" alt="Movie"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold text-4xl .font-inter">80K+</h2>
+                  <p>Rental partners</p>
+                </div>
+              </div>
+        </div>
+          </div>
+        </div>
+        </div>
+        <section>
+            <div class="flex justify-center mt-32">
+                <h1 class="text-4xl font-bold .font-raleway">Best offers for you</h1>
+            </div>
+            <div class="flex gap-6 mt-12 ">
+                <div class="card lg:card-side bg-base-100 shadow-xl w-[573px] h-[220px] bg-[#FFBF0F]">
+                    <div class="pl-10 pt-14">
+                        <h2 class="text-4xl font-black .font-inter">15% OFF</h2>
+                        <h4 class="text-2xl font-semibold .font-inter ">on your next purchase</h4>
+                        <p class="font-medium .font-inter text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <figure class="ml-10"><img src="./images/cupon-devider.png" alt=""></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl font-bold pt-10">NEW15</h2>
+                      <p class="text-[#03071266]">Coupon Code</p>
+                    </div>
+                  </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl w-[573px] h-[220px] bg-[#F78C9C]">
+                    <div class="pl-10 pt-14">
+                        <h2><span class="font-black .font-inter text-4xl">20% OFF</span> <br>
+                          <span class="text-2xl font-semibold .font-inter ">on your next purchase </span><br>
+                          <span class="text-[#03071280]">use by January 2024</span></h2>
+                    </div>
+                    <figure class="ml-8"><img src="./images/cupon-devider.png" alt=""></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl pt-10 font-bold text-[#030712] ">Couple 20</h2>
+                      <p class="text-[#03071266]">Coupon Code</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="flex justify-center mb-60">
+              <button class="btn mt-14 text-[#1DD100] bg-[#ffffff] border-green-500">See All Offers</button>
+            </div>
+        </section>
+      
+    </header>
+    <main>
+      <section>
+        <div class="text-center ">
+          <h2 class="text-[#131318] font-bold text-2xl mb-6">P.H Paribahan</h2>
+          <p class="w-[390px] md:w-[736px] h-12 font-medium text-base text-[#13131899] mx-auto ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined . </p>
+      </div>
+    <div class="flex flex-col-2 justify-around hero bg-slate-200 w-[1150px] mx-auto h-[418px] rounded-[30px] mt-8">
+      <div class="flex">
+        <figure class="w-[60px]"><img src="./images/bus-logo.png" alt=""></figure>
+        <div>
+          <h3 class="font-bold text-3xl .font-raleway ml-2">Greenline Paribahan </h3>
+        <p class="ml-2 .font-inter">Coach-009-WEB ! AC_Business</p>
+        </div>
+
+        <div class="ml-56 flex flex-col">
+          <button class="btn w-[150px] h-[46px]"><h4><span class=""><img src="./images/seat-green.png" alt=""></span>40 Seats left</h4></button>
+        </div>
+      </div>
+     
+      <figure class=""><img src="./images/info-devider.png" alt=""></figure>
+      <div class="mr-10">
+        <figure class="flex justify-center mb-4"><img src="./images/fare.png" alt=""></figure>
+        <h2 class="font-bold text-3xl .font-raleway mb-2">550 Taka</h2>
+        <p class="font-semibold text-2xl text-[#03071299] text-center">Per Seat</p>
+      </div>
+    </div>
+       </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
