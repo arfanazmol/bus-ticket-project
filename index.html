@@ -151,7 +151,7 @@
 
             <div class="ml-56 ">
               <button class="btn w-[150px] h-[46px]">
-                <h4 class="flex items-center text-[#1DD100]"><span><img src="./images/seat-green.png" alt=""></span> <p id="seat_count">16</p> Seats left</h4>
+                <h4 class="flex items-center text-[#1DD100]"><span><img src="./images/seat-green.png" alt=""></span> <span id="seat_count">8</span> Seats left</h4>
               </button>
             </div>
           </div>
@@ -215,108 +215,98 @@
           </div>
           <hr>
           <div> 
-            <div class="flex justify-end mr-[21px] mt-5">
+            <div class="flex justify-end mr-[14px] mt-5">
               <button class="btn w-24 "><span><img src="./images/tabler-icon-steering-wheel.png" alt=""></span></button>
             </div>
           </div>
-          <div class="flex gap-4 justify-around pt-3 mb-4">
+          <div class="flex gap-4 justify-around pt-3 mb-12 mt-8">
             <div>
-              <button id="btn-1" class="btn w-24 bg-[#1DD100]">A1</button>
+              <button onclick="disableButton_1()" id="btn-1" class="btn w-24 bg-[#F7F8F8]">A1</button>
             </div>
             <div>
-              <button id="btn-2" class="btn w-24 bg-[#1DD100]">A2</button>
+              <button onclick="disableButton_2()" id="btn-2" class="btn w-24 bg-[#F7F8F8] mr-8">A2</button>
             </div>
             <div>
-              <button id="btn-3" class="btn w-24 bg-[#1DD100]">A3</button>
+              <button onclick="disableButton_3()" id="btn-3" class="btn w-24 bg-[#F7F8F8] ml-8">A3</button>
             </div>
             <div>
-              <button id="btn-4" class="btn w-24 bg-[#1DD100]">A4</button>
-            </div>
-
-          </div>
-          <div class="flex gap-4 justify-around pt-3 mb-4">
-            <div>
-              <button id="btn-5" class="btn bg-[#1DD100] w-24">B1</button>
-            </div>
-            <div>
-              <button id="btn-6" class="btn bg-[#1DD100] w-24">B2</button>
-            </div>
-            <div>
-              <button id="btn-7" class="btn bg-[#1DD100] w-24">B3</button>
-            </div>
-            <div>
-              <button id="btn-8" class="btn bg-[#1DD100] w-24">B4</button>
+              <button onclick="disableButton_4()" id="btn-4" class="btn w-24 bg-[#F7F8F8]">A4</button>
             </div>
 
           </div>
           <div class="flex gap-4 justify-around pt-3 mb-4">
             <div>
-              <button class="btn w-24">C1</button>
+              <button onclick="disableButton_5()" id="btn-5" class="btn bg-[#F7F8F8] w-24">B1</button>
             </div>
             <div>
-              <button class="btn w-24">C2</button>
+              <button onclick="disableButton_6()" id="btn-6" class="btn bg-[#F7F8F8] w-24  mr-8">B2</button>
             </div>
             <div>
-              <butto class="btn w-24">C3</butto>
+              <button onclick="disableButton_7()" id="btn-7" class="btn bg-[#F7F8F8] w-24 ml-8">B3</button>
             </div>
             <div>
-              <button  class="btn w-24">C4</button>
+              <button onclick="disableButton_8()" id="btn-8" class="btn bg-[#F7F8F8] w-24">B4</button>
             </div>
 
           </div>
+
         </div>
         <div>
-          <h3 class=" font-semibold text-2xl .font-raleway pr-[370px] pt-8 pb-4">Select Your Seat</h3>
-          <hr>
-          <div class="overflow-x-auto bg-[#F7F8F8] rounded-3xl mt-10">
+          <h3 class=" font-semibold text-2xl .font-raleway pr-[370px] pt-8 pb-4 ml-8">Select Your Seat</h3>
+         
+          <div class="overflow-x-auto bg-[#F7F8F8] rounded-3xl mt-10 w-[500px] pl-4 ml-8">
             <table class="table">
               <!-- head -->
               <thead>
                 <tr>
 
-                  <th class="font-medium .font-inter text-[#030712] text-[16px] flex gap-1">Seat<h2 id="card-count" class="bg-[#1DD100] text-[#ffffff] w-6 rounded text-center">0</h2></th>
+                  <th class="font-medium .font-inter text-[#030712] text-[16px] flex gap-1">Seat<h2 id="card-count" class="bg-[#1DD100] text-[#ffffff] w-6 rounded text-center"><span id="seat_counter">0</span></h2></th>
                   <th class="font-medium .font-inter text-[#030712] text-[16px]">Class</th>
                   <th class="font-medium .font-inter text-[#030712] text-[16px]">Price</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="tbody">
                 <!-- row 1 -->
-                <tr>
-
-                  <td>C2</td>
-                  <td>Economoy</td>
-                  <td>550</td>
-                </tr>
-                <!-- row 2 -->
-                <tr>
-                  <td>C2</td>
-                  <td>Economoy</td>
-                  <td>550</td>
-                </tr>
+             
                 <!-- row 3 -->
                 <tr>
                   <td >Total Price</td>
                   <td></td>
-                  <td class="flex">BDT <p id="total">1100</p></td>
+                  <td class="flex gap-1">BDT <span id="total">00</span></td>
                 </tr>
               </tbody>
             </table>
             <div class=" flex justify-center pr-16 pt-4">
-              <input class=" input input-bordered join-item w-[320px]" placeholder="Have any copupon?" />
-              <button class="btn text-[#ffffff] bg-[#1DD100] rounded-s-md ">Apply</button>
+              <input id="input" class=" input input-bordered join-item w-[320px]" placeholder="Have any copupon?" />
+              <button onclick="applyCupon()" class="btn text-[#ffffff] bg-[#1DD100] rounded-s-md ">Apply</button>
             </div>
             <div class="overflow-x-auto ">
               <table class="table">
                 <tr>
                   <td>Grand Total</td>
                   <td></td>
-                  <td>BDT 1100</td>
+                  <td>BDT <span id="grand_total">00</span></td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="flex justify-center mt-2">
-            <button class="btn bg-[#1DD100] w-[550px]">Next</button>
+          <div class="flex justify-center mt-2 w-[718px]">
+            <!-- <button class="btn bg-[#1DD100] w-[550px]">Next</button> -->
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-[#1DD100] w-[480px] mr-[155px]" onclick="my_modal_2.showModal()"> Next</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <figure class="flex justify-center"><img src="./images/success.png" alt=""></figure>
+    <h3 class="font-bold text-lg flex justify-center mt-8">SUCCESS</h3>
+    <p class="py-4"><span class="font-medium text-[18px] flex text-center">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. </span> <br>
+      <span class="flex justify-center mb-5">Shortly you will find a confirmation in your email.</span></p>
+      <button class="btn bg-[#27AE60]  flex  mx-auto w-[300px] ">Continue</button>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
           </div>
         </div>
       </div>
