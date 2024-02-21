@@ -44,9 +44,11 @@ firstTotal.innerText = firstTotalPrice + 550;
 
 });
 
-
 function disableButton_1() {
- document.getElementById('btn-1').disabled = true;
+let button = document.getElementById('btn-1');
+button.disabled = true;
+button.style.backgroundColor = '#1DD100';
+button.style.color = 'white';
 }
 //-----------------------------------btn2-----------------------------------------
 
@@ -95,9 +97,12 @@ document.getElementById('btn-2').addEventListener('click', function() {
     });
 
     
-function disableButton_2() {
-    document.getElementById('btn-2').disabled = true;
-   }
+    function disableButton_2() {
+        let button = document.getElementById('btn-2');
+        button.disabled = true;
+        button.style.backgroundColor = '#1DD100';
+        button.style.color = 'white';
+        }
 
    //-----------------------------------btn3-----------------------------------------
 
@@ -146,9 +151,12 @@ function disableButton_2() {
         });
     
         
-    function disableButton_3() {
-        document.getElementById('btn-3').disabled = true;
-       }
+        function disableButton_3() {
+            let button = document.getElementById('btn-3');
+            button.disabled = true;
+            button.style.backgroundColor = '#1DD100';
+            button.style.color = 'white';
+            }
 
        //-----------------------------------btn4-----------------------------------------
 
@@ -197,9 +205,12 @@ function disableButton_2() {
             });
         
             
-        function disableButton_4() {
-            document.getElementById('btn-4').disabled = true;
-        }
+            function disableButton_4() {
+                let button = document.getElementById('btn-4');
+                button.disabled = true;
+                button.style.backgroundColor = '#1DD100';
+                button.style.color = 'white';
+                }
 //--------------------------btn-5---------------------------------
 
 document.getElementById('btn-5').addEventListener('click', function() {
@@ -247,9 +258,12 @@ document.getElementById('btn-5').addEventListener('click', function() {
     });
 
     
-function disableButton_5() {
-    document.getElementById('btn-5').disabled = true;
-}
+    function disableButton_5() {
+        let button = document.getElementById('btn-5');
+        button.disabled = true;
+        button.style.backgroundColor = '#1DD100';
+        button.style.color = 'white';
+        }
 
 //--------------------------btn-6---------------------------------
 
@@ -298,8 +312,11 @@ document.getElementById('btn-6').addEventListener('click', function() {
     });
 
     function disableButton_6() {
-        document.getElementById('btn-6').disabled = true;
-    }
+        let button = document.getElementById('btn-6');
+        button.disabled = true;
+        button.style.backgroundColor = '#1DD100';
+        button.style.color = 'white';
+        }
 
     //--------------------------btn-7---------------------------------
 
@@ -348,8 +365,11 @@ document.getElementById('btn-6').addEventListener('click', function() {
         });
 
         function disableButton_7() {
-            document.getElementById('btn-7').disabled = true;
-        }
+            let button = document.getElementById('btn-7');
+            button.disabled = true;
+            button.style.backgroundColor = '#1DD100';
+            button.style.color = 'white';
+            }
 
         //--------------------------btn-8---------------------------------
 
@@ -401,8 +421,11 @@ document.getElementById('btn-6').addEventListener('click', function() {
          
 
             function disableButton_8() {
-                document.getElementById('btn-8').disabled = true;
-            }
+                let button = document.getElementById('btn-8');
+                button.disabled = true;
+                button.style.backgroundColor = '#1DD100';
+                button.style.color = 'white';
+                }
 
           //------------------------------------------------------------------------------------------------
 
@@ -432,4 +455,3 @@ function applyDiscount(discountParcentage){
     let discount = totalPri * discountParcentage / 100;
     totalPriceele.textContent = totalPri - discount;
 }
-
